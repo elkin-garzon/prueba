@@ -83,11 +83,15 @@ body {
     background: $gris2;
     font-size: 14px;
     font-family: normal normal bold 14px/24px DIN 2014;
-    h2 {
+    h2, h3 {
         font-size: 20px;
         font-weight: 300;
         color: $morado;
         margin-bottom: 15px;
+    }
+    h3{
+        font-size: 16px;
+        margin-bottom: 5px;
     }
     .texto-morado-bold {
         color: $morado;
