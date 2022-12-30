@@ -1,0 +1,65 @@
+<section class="contenido-blanco margin infor-general">
+    <h2>Información general</h2>
+    
+    <form [formGroup]="form" class="row">
+        <div class="col-sm-12 margin-top">
+            <label for="nombre" class="form-label">Nombre</label>
+            <input type="text" name="nombre" id="nombre" formControlName="nombre" autocomplete="off" class="form-control">
+        </div>
+        <div class="col-sm-12 margin-top">
+            <label for="apellidos" class="form-label">apellidos</label>
+            <input type="text" name="apellidos" id="apellidos" formControlName="apellidos" autocomplete="off" class="form-control">
+        </div>
+        <div class="col-sm-12 margin-top">
+            <label for="documento" class="form-label">Documento de identidad</label>
+            <input type="text" name="documento" id="documento" formControlName="documento" autocomplete="off" class="form-control">
+        </div>
+        <div class="col-sm-12 margin-top">
+            <label for="nro_documento" class="form-label">Número de documento de identidad</label>
+            <input type="number" name="nro_documento" id="nro_documento" formControlName="nro_documento" autocomplete="off" class="form-control">
+        </div>
+        <div class="col-sm-12 margin-top">
+            <label for="correo" class="form-label">E-mail</label>
+            <input type="email" name="correo" id="correo" formControlName="correo" autocomplete="off" class="form-control">
+        </div>
+        <div class="col-sm-12 margin-top">
+            <label for="celular" class="form-label">Celular</label>
+            <div class="row">
+                <div class="col-sm-4 col-xs-4">
+                    <div class="form-control">
+                        hola
+                    </div>
+                    
+                </div>
+                <div class="col-sm-8 col-xs-8">
+                    <input type="number" name="celular" id="celular" formControlName="celular" autocomplete="off" class="form-control">
+                </div>
+            </div>
+            
+                
+            
+        </div>
+        <div class="col-sm-12 margin-top">
+            <label for="fecha_nacimiento" class="form-label">Fecha de nacimiento</label>
+            <input type="date" name="fecha_nacimiento" id="fecha_nacimiento" formControlName="fecha_nacimiento" autocomplete="off" class="form-control">
+        </div>
+        <div class="col-sm-12 margin-top">
+            <label for="genero" class="form-label">Genero</label>
+            <div class="contenido-genero">
+                <div class="contenido-label">
+                    <input id="gender" type="radio" name="genero" id="hombre" value="hombre" formControlName="genero"/>
+                    <label class="radio-label btn" for="hombre"> Hombre</label>
+                </div>
+                <div class="contenido-label">
+                    <input id="gender" type="radio" name="genero" id="genero" value="mujer" formControlName="genero" />
+                    <label class="radio-label btn" for="hombre"> Mujer</label>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-12 margin-top">
+            <button class="bt btn-guardar form-control" [disabled]="!form.valid" (click)="save()">Editar</button>
+        </div>
+    </form>
+
+    
+</section>
