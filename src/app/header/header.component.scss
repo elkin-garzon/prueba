@@ -1,0 +1,32 @@
+@import '../../variables.scss';
+
+header {
+    background: $gris1;
+    padding: 20px 0;
+
+    button {
+        background: $morado;
+        border: none;
+        color: $blanco;
+        min-width: 100px;
+    }
+
+    .opciones {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        .info {
+            border: 1px solid $morado;
+            color: $morado;
+            width: 20px;
+            height: 20px;
+            display: flex;
+            border-radius: 50%;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+
+   
+}
