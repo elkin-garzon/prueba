@@ -1,0 +1,71 @@
+<section class="contenido-blanco margin infor-general">
+    <h2>Información financiera</h2>
+
+    <form [formGroup]="formFinanciera" class="row">
+        <div class="col-sm-12 margin-top">
+            <label class="form-label">ocupacion</label>
+            <div class="contenido-label-circulo">
+                <input id="gender" type="radio" name="ocupacion" id="ocupacion" value="estudiante" formControlName="ocupacion"/>
+                <label class="radio-label btn" for="ocupacion"> Estudiante</label>
+            </div>
+            <div class="contenido-label-circulo">
+                <input id="gender" type="radio" name="ocupacion" id="ocupacion" value="Empleado" formControlName="ocupacion"/>
+                <label class="radio-label btn" for="ocupacion"> Empleado</label>
+            </div>
+            <div class="contenido-label-circulo">
+                <input id="gender" type="radio" name="ocupacion" id="ocupacion" value="Independiente" formControlName="ocupacion"/>
+                <label class="radio-label btn" for="ocupacion"> Independiente</label>
+            </div>
+            <div class="contenido-label-circulo">
+                <input id="gender" type="radio" name="ocupacion" id="ocupacion" value="Pensionado" formControlName="ocupacion"/>
+                <label class="radio-label btn" for="ocupacion"> Pensionado</label>
+            </div>
+            <div class="contenido-label-circulo">
+                <input id="gender" type="radio" name="ocupacion" id="ocupacion" value="Otro" formControlName="ocupacion"/>
+                <label class="radio-label btn" for="ocupacion"> Otro</label>
+            </div>
+        </div>
+
+        <div class="col-sm-12 margin-top">
+            <label for="nivel_educacion" class="form-label">Nivel de educación</label>
+            <select class="form-select" formControlName="nivel_educacion">
+                <option selected>Seleccione</option>
+                <option value="bachiller">Bachiller</option>
+                <option value="pregrado">Pregrado</option>
+                <option value="posgrado">Posgrado</option>
+              </select>
+        </div>
+
+        <div class="col-sm-12 margin-top">
+            <label for="actividad" class="form-label">Actividad laboral</label>
+            <select class="form-select" formControlName="actividad">
+                <option selected>Seleccione</option>
+                <option value="comerciente">Comerciente</option>
+                <option value="tecnologia">Tecnología</option>
+                <option value="empleado">Empleado</option>
+              </select>
+        </div>
+
+        <div class="col-sm-12 margin-top">
+            <label for="ingresos" class="form-label">Ingresos promedio mensuales</label>
+            <select class="form-select" formControlName="ingresos">
+                <option selected>Seleccione</option>
+                <option value="1">Entre 2'000.001 y 3'000.000</option>
+                <option value="2">Entre 3'000.001 y 4'000.000</option>
+                <option value="3">Entre 4'000.001 y 5'000.000</option>
+              </select>
+        </div>
+        <div class="col-sm-12 margin-top">
+            <label for="gastos" class="form-label">Gastos promedio mensuales</label>
+            <select class="form-select" formControlName="gastos">
+                <option selected>Seleccione</option>
+                <option value="1">Entre 1'500.000 y 2'000.000</option>
+                <option value="3">Entre 2'000.001 y 2'500.000</option>
+                <option value="3">Entre 2'500.001 y 23'500.000</option>
+              </select>
+        </div>
+        <div class="col-sm-12 margin-top">
+            <button class="bt btn-guardar form-control" [disabled]="!formFinanciera.valid" (click)="save()">Editar</button>
+        </div>
+    </form>
+</section>

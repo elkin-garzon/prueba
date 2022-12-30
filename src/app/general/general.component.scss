@@ -1,55 +1,28 @@
 @import '../../variables.scss';
-
-.infor-general {
-    h2 {
-        font-size: 20px;
-        font-weight: 300;
-        color: $morado;
-        margin-bottom: 15px;
-    }
-
-    label {
-        color: $morado;
-        font-weight: bold;
-        font-size: 14px;
-    }
-
-    .margin-top {
-        margin-top: 20px;
-    }
-
+.contenido-label {
+    position: relative;
+    width: 50%;
     .contenido-genero {
         display: flex;
         justify-content: space-between;
+    }
 
-        .contenido-label {
-            position: relative;
-            width: 50%;
-            .contenido-genero {
-                display: flex;
-                justify-content: space-between;
-            }
+    input[type="radio"] {
+        position: absolute;
+        width: 90%;
+        height: 35px;
+    }
 
-            input[type="radio"] {
-                position: absolute;
-                width: 90%;
-                height: 35px;
-            }
+    input[type="radio"]+label {
+        border: 1px solid $border;
+        background: $blanco;
+        width: 90%;
+        height: 35px;
+        color: $negro;
+    }
 
-            input[type="radio"]+label {
-                border: 1px solid $border;
-                background: $blanco;
-                width: 90%;
-                height: 35px;
-                color: $negro;
-            }
-
-            input[type="radio"]:checked+label {
-                background: $morado;
-                color: $blanco;
-            }
-        }
-
-
+    input[type="radio"]:checked+label {
+        background: $morado;
+        color: $blanco;
     }
 }

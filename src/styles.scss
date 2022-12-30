@@ -83,6 +83,12 @@ body {
     background: $gris2;
     font-size: 14px;
     font-family: normal normal bold 14px/24px DIN 2014;
+    h2 {
+        font-size: 20px;
+        font-weight: 300;
+        color: $morado;
+        margin-bottom: 15px;
+    }
     .texto-morado-bold {
         color: $morado;
         font-weight: bold;
@@ -105,5 +111,26 @@ body {
         background: $morado;
         width: 100%;
         color: $blanco;
+    }
+
+    .infor-general {
+        label {
+            color: $morado;
+            font-weight: bold;
+            font-size: 14px;
+        }
+    
+        .margin-top {
+            margin-top: 20px;
+        }
+    
+        .contenido-genero {
+            display: flex;
+            justify-content: space-between;
+    
+            
+    
+    
+        }
     }
 }

@@ -7,13 +7,15 @@ import { HeaderComponent } from './header/header.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { MenuComponent } from './menu/menu.component';
 import { GeneralComponent } from './general/general.component';
+import { FinancieraComponent } from './financiera/financiera.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     MenuComponent,
-    GeneralComponent
+    GeneralComponent,
+    FinancieraComponent
   ],
   imports: [
     BrowserModule,
