@@ -79,30 +79,25 @@ input {
     padding: 0;
     text-decoration: none;
 }
-
 body {
     background: $gris2;
     font-size: 14px;
     font-family: normal normal bold 14px/24px DIN 2014;
-
     .texto-morado-bold {
         color: $morado;
         font-weight: bold;
     }
-
     .texto-negro {
         color: $negro;
         font-weight: 300;
     }
-
     .margin {
         margin-top: 20px;
     }
-
     .contenido-blanco {
         background: $blanco;
         border-radius: 8px;
-        padding: 20px 5px;
+        padding: 20px 15px;
         box-sizing: border-box;
         box-shadow: 2px 2px 6px #00000029;
     }

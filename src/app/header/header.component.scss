@@ -4,14 +4,12 @@ header {
     background: $gris1;
     padding: 20px 0;
     box-sizing: border-box;
-
     button {
         background: $morado;
         border: none;
         color: $blanco;
         min-width: 100px;
     }
-
     .opciones {
         display: flex;
         align-items: center;
@@ -28,6 +26,4 @@ header {
             align-items: center;
         }
     }
-
-   
 }
