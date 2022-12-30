@@ -1,6 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
 @import './variables.scss';
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap');
+
 /* ========== ResetCSS ========== */
 *,
 html,
@@ -83,12 +84,26 @@ body {
     background: $gris2;
     font-size: 14px;
     font-family: normal normal bold 14px/24px DIN 2014;
-    .texto-morado-bold{
+
+    .texto-morado-bold {
         color: $morado;
         font-weight: bold;
     }
-    .texto-negro{
+
+    .texto-negro {
         color: $negro;
         font-weight: 300;
+    }
+
+    .margin {
+        margin-top: 20px;
+    }
+
+    .contenido-blanco {
+        background: $blanco;
+        border-radius: 8px;
+        padding: 20px 5px;
+        box-sizing: border-box;
+        box-shadow: 2px 2px 6px #00000029;
     }
 }
